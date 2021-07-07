@@ -11,9 +11,7 @@ jobs:
       - uses: actions/checkout@v2
       # Step 2
       - name: 
-        run: sudo usermod -a -G docker ec2-user && sudo chmod 666 /var/run/docker.sock && docker build -t simple-nginx . 
-      - name:
-        run: docker run -p 80:80 simple-nginx .
+        run: docker build -t simple-nginx . && docker run -p 80:80 simple-nginx
         
   continuous-deployment:
     runs-on: ubuntu-latest
