@@ -13,7 +13,7 @@ jobs:
       - name: 
         run: sudo docker build -t simple-nginx .
       - name:
-        run: sudo docker run --rm -p 80:80 simple-nginx .
+        run: sudo docker run --rm -p 80:80 simple-nginx
         
   continuous-deployment:
     runs-on: ubuntu-latest
