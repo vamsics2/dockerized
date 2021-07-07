@@ -30,7 +30,7 @@ jobs:
         id: deploy
         run: |
           aws deploy create-deployment \
-            --application-name Git_application \
-            --deployment-group-name development_group \
+            --application-name Ec2InstanceDocker \
+            --deployment-group-name Ec2Dockerized \
             --deployment-config-name CodeDeployDefault.OneAtATime \
             --github-location repository=${{ github.repository }},commitId=${{ github.sha }}
