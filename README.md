@@ -36,6 +36,7 @@ We can verify the updated container by altering the index.html to reflect any ch
 
 -------------------
 1. CI CD by GitHub actions ![image](https://user-images.githubusercontent.com/39087062/124860300-09c40e00-dfcf-11eb-84c8-08c538aba50d.png)
-2. Before updating index.html nginx serving at port 80
+2. Before updating index.html nginx serving at port 80 ![image](https://user-images.githubusercontent.com/39087062/124862867-c4eea600-dfd3-11eb-974f-69eedae88ac5.png) ![image](https://user-images.githubusercontent.com/39087062/124863005-fb2c2580-dfd3-11eb-8cfc-0bcd6328a840.png)![image](https://user-images.githubusercontent.com/39087062/124863051-0ed78c00-dfd4-11eb-9455-a879051b2a35.png)
+3. After updating the index.html 
 
 
