@@ -12,8 +12,8 @@ jobs:
       # Step 1
       - uses: actions/checkout@v2
       # Step 2
-      - name: 
-        run: docker rm -f $(docker ps -q) || docker build -t simple-nginx . && docker run -d -p 80:80 simple-nginx
+      - name: Build the Docker image using the Dockerfile
+        run: docker build -t simple-nginx .
         
   continuous-deployment:
     runs-on: ubuntu-latest
