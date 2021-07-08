@@ -25,7 +25,8 @@ The Dockerfile contains the skeleton for downloading an nginx image and copying 
 Continous Integration and Continous deployment is achieved with the help of github actions.
 The required configuration is already in place all you have to do is just push your changes to main branch. So that the GitHub action ll be triggered to fire CI and CD jobs sequentially.
 As and when there is a change in repository code, The action will fire and build the docker image with the **Dockerfile**. Updated image will be deployed into EC2 instance through *application, deployments and deployment groups* This is achieved with the help of **AWS CodeDeploy**.
-Push to github repo -> Continous integration will helps to build the docker image -> Continous deployment will helps to deploy the code into EC2 instance.
+
+### Push to github repo -> Continous integration will helps to build the docker image -> Continous deployment will helps to deploy the code into EC2 instance -> verify your container running at publicip:80
 
 We can verify the updated container by altering the index.html to reflect any changes at EC2 public IP with port 80.
 
@@ -37,6 +38,9 @@ We can verify the updated container by altering the index.html to reflect any ch
 -------------------
 1. CI CD by GitHub actions ![image](https://user-images.githubusercontent.com/39087062/124860300-09c40e00-dfcf-11eb-84c8-08c538aba50d.png)
 2. Before updating index.html nginx serving at port 80 ![image](https://user-images.githubusercontent.com/39087062/124862867-c4eea600-dfd3-11eb-974f-69eedae88ac5.png) ![image](https://user-images.githubusercontent.com/39087062/124863005-fb2c2580-dfd3-11eb-8cfc-0bcd6328a840.png)![image](https://user-images.githubusercontent.com/39087062/124863051-0ed78c00-dfd4-11eb-9455-a879051b2a35.png)
-3. After updating the index.html 
+3. After updating the index.html ![image](https://user-images.githubusercontent.com/39087062/124864452-89091000-dfd6-11eb-8048-4bf083015798.png)
+![image](https://user-images.githubusercontent.com/39087062/124864491-9c1be000-dfd6-11eb-9ee1-bffaf17fefc9.png)
+![image](https://user-images.githubusercontent.com/39087062/124864505-a342ee00-dfd6-11eb-855c-97d792fdbe70.png)
+
 
 
