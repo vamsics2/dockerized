@@ -29,3 +29,13 @@ Push to github repo -> Continous integration will helps to build the docker imag
 
 We can verify the updated container by altering the index.html to reflect any changes at EC2 public IP with port 80.
 
+1. Before terraform ![image](https://user-images.githubusercontent.com/39087062/124859821-2a3f9880-dfce-11eb-98eb-05806a023267.png)
+2. After terraform ![image](https://user-images.githubusercontent.com/39087062/124859892-4e9b7500-dfce-11eb-8fcd-ac03239035d7.png)
+![image](https://user-images.githubusercontent.com/39087062/124859965-77bc0580-dfce-11eb-911e-afeb272eb965.png)![image](https://user-images.githubusercontent.com/39087062/124860084-adf98500-dfce-11eb-9566-f8665bfcf378.png)
+![image](https://user-images.githubusercontent.com/39087062/124860130-c5d10900-dfce-11eb-8860-994f2c1691b4.png)
+
+-------------------
+1. CI CD by GitHub actions ![image](https://user-images.githubusercontent.com/39087062/124860300-09c40e00-dfcf-11eb-84c8-08c538aba50d.png)
+2. Before updating index.html nginx serving at port 80
+
+
