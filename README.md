@@ -25,6 +25,8 @@ The Dockerfile contains the skeleton for downloading an nginx image and copying 
 Continous Integration and Continous deployment is achieved with the help of github actions.
 The required configuration is already in place all you have to do is just push your changes to main branch. So that the GitHub action ll be triggered to fire CI and CD jobs sequentially.
 As and when there is a change in repository code, The action will fire and build the docker image with the **Dockerfile**. Updated image will be deployed into EC2 instance through *application, deployments and deployment groups* This is achieved with the help of **AWS CodeDeploy**.
+- submit a Pull request to the repo https://github.com/vamsics2/dockerized
+- Navigate to public ip http://54.149.18.208/ and see the container running.
 
 ### Push to github repo -> Continous integration will helps to build the docker image -> Continous deployment will helps to deploy the code into EC2 instance -> verify your container running at publicip:80
 
