@@ -5,9 +5,9 @@ files:
     destination: /home/ec2-user/dockerized/
 hooks:
   BeforeInstall:
-  - location: prepare.sh
-     timeout: 300
-     runas: root
+    - location: prepare.sh
+      timeout: 300
+      runas: root
   AfterInstall:
     - location: buildagain.sh
       timeout: 300
