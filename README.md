@@ -1,4 +1,4 @@
-## Technical assessment Teraform/CICD
+## Teraform/CICD
 ------------------------
 ### The Tasks includes
 - Create terraform script for provisioning a Linux EC2 instance with port 80 exposed to internet.
